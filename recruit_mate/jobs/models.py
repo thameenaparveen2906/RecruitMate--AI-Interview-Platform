@@ -3,7 +3,6 @@ from django.conf import settings
 from dashboard.models import TimeStampedModel
 
 class JobDescription(TimeStampedModel):
-    """Job description model"""
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='job_descriptions')
     title = models.CharField(max_length=255)
     description = models.TextField()
