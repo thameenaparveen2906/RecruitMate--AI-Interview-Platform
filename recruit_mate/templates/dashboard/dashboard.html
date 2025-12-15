@@ -4,6 +4,7 @@
 
 {% block extra_css %}
 {{ block.super }}
+{% load static %}
 <style>
     .stats-grid {
         display: grid;
@@ -282,19 +283,19 @@
 
 <div class="quick-actions">
     <a href="{% url 'interviews:create' %}" class="action-card">
-        <div class="action-image"><img src="/static/links.png"></div>
+        <div class="action-image"><img src="{% static 'links.png' %}"></div>
         <h3 class="action-title">Interview Links</h3>
         <p class="action-desc">Create and manage shareable interview links</p>
     </a>
     
     <a href="{% url 'jobs:lists' %}" class="action-card">
-        <div class="action-image"><img src="/static/job.png"></div>
+        <div class="action-image"><img src="{% static 'job.png' %}"></div>
         <h3 class="action-title">Job Descriptions</h3>
         <p class="action-desc">Create and edit job descriptions</p>
     </a>
     
     <a href="{% url 'candidates:all' %}" class="action-card">
-         <div class="action-image"><img src="/static/candidate.png"></div>
+         <div class="action-image"><img src="{% static 'candidate.png' %}"></div>
         <h3 class="action-title">Candidates</h3>
         <p class="action-desc">Manage candidate profiles and resumes</p>
     </a>
