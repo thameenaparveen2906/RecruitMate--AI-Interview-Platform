@@ -4,7 +4,6 @@ from dashboard.models import TimeStampedModel
 import uuid
 
 class InterviewSession(TimeStampedModel):
-    """Interview session model"""
     STATUS_CHOICES = [
         ('pending', 'Pending'),
         ('in_progress', 'In Progress'),
@@ -40,7 +39,6 @@ class InterviewSession(TimeStampedModel):
         return f"Interview - {self.job.title}"
 
 class InterviewQuestion(TimeStampedModel):
-    """Interview question model"""
     QUESTION_TYPES = [
         ('technical', 'Technical'),
         ('behavioral', 'Behavioral'),
@@ -69,7 +67,6 @@ class InterviewQuestion(TimeStampedModel):
         return f"Q{self.order}: {self.question_text[:50]}"
 
 class InterviewAnswer(TimeStampedModel):
-    """Interview answer model"""
     session = models.ForeignKey(InterviewSession, on_delete=models.CASCADE, related_name='answers')
     question = models.ForeignKey(InterviewQuestion, on_delete=models.CASCADE, related_name='answers')
     answer_text = models.TextField()
@@ -85,7 +82,6 @@ class InterviewAnswer(TimeStampedModel):
         return f"Answer to {self.question.question_text[:30]}"
 
 class InterviewResult(TimeStampedModel):
-    """Interview result model"""
     session = models.OneToOneField(InterviewSession, on_delete=models.CASCADE, related_name='result')
     overall_score = models.IntegerField()
     summary = models.TextField()
