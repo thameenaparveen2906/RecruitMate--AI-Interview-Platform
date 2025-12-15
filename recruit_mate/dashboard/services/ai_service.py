@@ -7,7 +7,6 @@ import logging
 logger = logging.getLogger(__name__)
 
 class AIService:
-    """Modern OpenAI Responses API service for question generation, evaluation and reports."""
 
     def __init__(self):
         api_key = getattr(settings, "OPENAI_API_KEY", None)
