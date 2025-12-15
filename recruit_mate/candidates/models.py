@@ -2,7 +2,6 @@ from django.db import models
 from dashboard.models import TimeStampedModel
 
 class Candidate(TimeStampedModel):
-    """Candidate model"""
     name = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20, blank=True)
