@@ -3,9 +3,7 @@ from docx import Document
 from PyPDF2 import PdfReader
 
 class ResumeParser:
-    """Extract skills, experience, and education from resumes"""
 
-    # Add your skill keywords here or load from a JSON
     SKILLS_KEYWORDS = [
         "Python", "Django", "Flask", "JavaScript", "React", "Node.js", "MongoDB",
         "SQL", "Flutter", "Unity", "C++", "Java", "Git", "Docker", "AWS"
