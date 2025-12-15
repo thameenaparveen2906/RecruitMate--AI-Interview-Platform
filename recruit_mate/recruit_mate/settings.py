@@ -33,6 +33,12 @@ ALLOWED_HOSTS = [
     "recruitmate-ai-interview-platform.onrender.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://recruitmate-ai-interview-platform.onrender.com",
+]
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+DEBUG = False
 
 # Application definition
 
