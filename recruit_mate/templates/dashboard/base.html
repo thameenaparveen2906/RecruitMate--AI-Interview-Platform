@@ -373,14 +373,11 @@ document.addEventListener('click', function(event) {
         dropdown.classList.remove('show');
     }
 });
-const hamburger = document.createElement('div');
-hamburger.classList.add('hamburger');
-hamburger.innerHTML = '<div></div><div></div><div></div>';
-document.querySelector('.navbar-container').prepend(hamburger);
-
+const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', () => {
     const menu = document.querySelector('.navbar-menu');
     menu.classList.toggle('active');
 });
+
 </script>
 {% endblock %}
