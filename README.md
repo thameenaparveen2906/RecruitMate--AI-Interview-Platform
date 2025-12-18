@@ -75,7 +75,7 @@ RecruitMate is a **modern AI-powered interview automation system** built with **
 | Backend      | Django (Python) |
 | API / AI     | Google Gemini AI, OpenAI (optional) |
 | Database     | SQLite (Dev) |
-| Frontend     | HTML, CSS, Bootstrap |
+| Frontend     | HTML, CSS |
 | REST API     | Django REST Framework |
 | Auth         | Django Custom User Model |
 | File Parsing | PyPDF2, python-docx |
