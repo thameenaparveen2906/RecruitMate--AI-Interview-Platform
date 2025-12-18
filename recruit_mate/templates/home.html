@@ -199,6 +199,49 @@
         border-radius: 60px 60px 0 0;
         box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
     }
+    @media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        margin-left: 60%;
+      
+    }
+
+    .nav-button {
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+
+    .hero-background-shape {
+        width: 0px;
+        height: 0px;
+        
+    }
+}
 </style>
 {% endblock %}
 
