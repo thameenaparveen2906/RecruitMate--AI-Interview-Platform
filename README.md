@@ -80,5 +80,4 @@ RecruitMate is a **modern AI-powered interview automation system** built with **
 | Auth         | Django Custom User Model |
 | File Parsing | PyPDF2, python-docx |
 
----
 
