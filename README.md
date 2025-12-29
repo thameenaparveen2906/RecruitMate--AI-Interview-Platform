@@ -62,7 +62,6 @@ RecruitMate is a **modern AI-powered interview automation system** built with **
 
 ### 🔹 Modern UI/UX
 - Responsive frontend  
-- Clean Bootstrap-based design  
 - Dashboard for jobs, candidates & interviews  
 - REST API support  
 
