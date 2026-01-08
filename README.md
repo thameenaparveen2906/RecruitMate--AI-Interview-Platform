@@ -77,7 +77,7 @@ https://recruitmate-ai-interview-platform.onrender.com
 | Component     | Technology |
 |--------------|------------|
 | Backend      | Django (Python) |
-| API / AI     | Google Gemini AI, OpenAI (optional) |
+| API / AI     | Google Gemini AI, OpenAI |
 | Database     | SQLite (Dev) |
 | Frontend     | HTML, CSS |
 | REST API     | Django REST Framework |
